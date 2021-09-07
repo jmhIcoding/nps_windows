@@ -5,6 +5,7 @@ import os
 import json
 from get_ucas_ip import get_ucas_ip
 from config import proxy, conf_fname
+import logger
 
 ###配置文件模板
 conf_template="""[common]
@@ -27,13 +28,18 @@ def generate_configuration(ip, proxies):
         _ = proxy_temp.format(pro['remark'], pro['LAN_ip'], pro['LAN_port'], pro['Server_port'])
         conf += _
     return conf
-if __name__ == '__main__':
+
+def main():
     ip = get_ucas_ip()
     proxies = proxy
 
     conf = generate_configuration(ip=ip, proxies = proxies)
 
-    print("Generate new configuration:")
+    msg="Generate new configuration:\n{0}".format(conf)
     print(conf)
+    logger.info(msg)
+
     with open(conf_fname,'w') as fp:
         fp.writelines(conf)
+if __name__ == '__main__':
+    main()

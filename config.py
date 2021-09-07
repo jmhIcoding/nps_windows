@@ -32,3 +32,9 @@ proxy = [
 
 ## 配置文件路径(不要修改, 按照固定目录放置文件)
 conf_fname = r"D:\windows_amd64_client\conf\npc.conf"
+
+## 保存ip的文件
+ip_fname = r"D:\windows_amd64_client\ip.json"
+
+## 日志文件
+log_fname =  r"D:\windows_amd64_client\log"
