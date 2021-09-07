@@ -13,20 +13,7 @@ proxy = [
     {
     'LAN_ip':'127.0.0.1',
     'LAN_port':'3389',
-    'Server_port':'53390',
     'remark':'remote desktop'
-    },
-    {
-    'LAN_ip':'192.168.255.82',
-    'LAN_port':'59527',
-    'Server_port':'59527',
-    'remark':'1080ti'
-    },
-    {
-    'LAN_ip':'192.168.255.81',
-    'LAN_port':'22',
-    'Server_port':'59528',
-    'remark':'Titan'
     }
 ]
 
