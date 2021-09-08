@@ -1,11 +1,16 @@
-2021-09-07 11:16:21,542 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
-2021-09-07 11:16:21,801 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
-2021-09-07 11:16:21,805 - WARNING: Time:2021-09-07 11:16:21.805159, [INFO]: Get DNS Record:
- {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-07 11:16:24'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
-2021-09-07 11:16:21,807 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
-2021-09-07 11:16:22,046 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
-2021-09-07 11:16:22,052 - WARNING: Time:2021-09-07 11:16:22.052802, [INFO]: Get new ip (210.76.216.138) from DNSPod.
-2021-09-07 11:16:22,056 - WARNING: Time:2021-09-07 11:16:22.056109, [INFO]: Generate new configuration:
+2021-09-08 09:19:20,012 - WARNING: Time:2021-09-08 09:19:20.012356, [INFO]: check ip 210.76.216.138
+2021-09-08 09:19:20,015 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:19:20,036 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:19:20,047 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:19:20,047 - WARNING: Time:2021-09-08 09:19:20.047533, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:19:20,049 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:19:20,333 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
+2021-09-08 09:19:20,333 - WARNING: Time:2021-09-08 09:19:20.333569, [INFO]: Get DNS Record:
+ {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-08 09:19:24'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
+2021-09-08 09:19:20,333 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:19:20,582 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
+2021-09-08 09:19:20,590 - WARNING: Time:2021-09-08 09:19:20.590312, [INFO]: Get new ip (210.76.216.138) from DNSPod.
+2021-09-08 09:19:20,591 - WARNING: Time:2021-09-08 09:19:20.591314, [INFO]: Generate new configuration:
 [common]
 server_addr=210.76.216.138:8024
 conn_type=tcp
@@ -18,42 +23,59 @@ remark=dk@Thinkpad-T430 CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
 mode=tcp
 target_addr=127.0.0.1:3389
 server_port=53390
-[1080ti]
-mode=tcp
-target_addr=192.168.255.82:59527
-server_port=59527
-[Titan]
-mode=tcp
-target_addr=192.168.255.81:22
-server_port=59528
-2021-09-07 11:16:27,572 - WARNING: Time:2021-09-07 11:16:27.572916, [INFO]: check ip 210.76.216.138
-2021-09-07 11:16:27,589 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
-2021-09-07 11:16:27,590 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
-2021-09-07 11:16:27,614 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
-2021-09-07 11:16:33,081 - WARNING: Time:2021-09-07 11:16:33.081933, [INFO]: check ip 210.76.216.138
-2021-09-07 11:16:33,098 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
-2021-09-07 11:16:33,098 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
-2021-09-07 11:16:33,116 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
-2021-09-07 11:16:38,583 - WARNING: Time:2021-09-07 11:16:38.583281, [INFO]: check ip 210.76.216.138
-2021-09-07 11:16:38,587 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
-2021-09-07 11:16:38,607 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
-2021-09-07 11:16:38,617 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
-2021-09-07 11:16:44,103 - WARNING: Time:2021-09-07 11:16:44.103422, [INFO]: check ip 210.76.216.138
-2021-09-07 11:16:44,106 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
-2021-09-07 11:16:44,117 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
-2021-09-07 11:16:44,129 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
-2021-09-07 11:16:49,554 - WARNING: Time:2021-09-07 11:16:49.554444, [INFO]: check ip 210.76.216.138
-2021-09-07 11:16:49,554 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
-2021-09-07 11:16:49,570 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
-2021-09-07 11:16:49,585 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
-2021-09-07 11:18:14,505 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
-2021-09-07 11:18:14,859 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
-2021-09-07 11:18:14,864 - WARNING: Time:2021-09-07 11:18:14.864701, [INFO]: Get DNS Record:
- {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-07 11:18:17'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
-2021-09-07 11:18:14,869 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
-2021-09-07 11:18:15,127 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
-2021-09-07 11:18:15,135 - WARNING: Time:2021-09-07 11:18:15.135978, [INFO]: Get new ip (210.76.216.138) from DNSPod.
-2021-09-07 11:18:15,142 - WARNING: Time:2021-09-07 11:18:15.142984, [INFO]: Generate new configuration:
+2021-09-08 09:19:20,604 - WARNING: Time:2021-09-08 09:19:20.604972, [INFO]: start process 4164 for connecting nps remote server
+2021-09-08 09:19:20,605 - WARNING: Time:2021-09-08 09:19:20.605973, [INFO]: check ip 210.76.216.138
+2021-09-08 09:19:20,607 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:19:20,616 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:19:20,630 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:19:20,631 - WARNING: Time:2021-09-08 09:19:20.631718, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:19:25,645 - WARNING: Time:2021-09-08 09:19:25.645391, [INFO]: check ip 210.76.216.138
+2021-09-08 09:19:25,645 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:19:25,661 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:19:25,676 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:19:25,676 - WARNING: Time:2021-09-08 09:19:25.676644, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:19:30,677 - WARNING: Time:2021-09-08 09:19:30.677907, [INFO]: check ip 210.76.216.138
+2021-09-08 09:19:30,677 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:19:30,693 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:19:30,709 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:19:30,709 - WARNING: Time:2021-09-08 09:19:30.709181, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:19:35,710 - WARNING: Time:2021-09-08 09:19:35.710014, [INFO]: check ip 210.76.216.138
+2021-09-08 09:19:35,716 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:19:35,736 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:19:35,749 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:19:35,751 - WARNING: Time:2021-09-08 09:19:35.751045, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:19:40,754 - WARNING: Time:2021-09-08 09:19:40.754193, [INFO]: check ip 210.76.216.138
+2021-09-08 09:19:40,754 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:19:40,769 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:19:40,785 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:19:40,785 - WARNING: Time:2021-09-08 09:19:40.785433, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:19:45,793 - WARNING: Time:2021-09-08 09:19:45.793473, [INFO]: check ip 210.76.216.138
+2021-09-08 09:19:45,793 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:19:45,809 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:19:45,824 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:19:45,824 - WARNING: Time:2021-09-08 09:19:45.824752, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:19:50,825 - WARNING: Time:2021-09-08 09:19:50.825739, [INFO]: check ip 210.76.216.138
+2021-09-08 09:19:50,825 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:19:50,841 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:19:50,857 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:19:50,857 - WARNING: Time:2021-09-08 09:19:50.857012, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:19:55,859 - WARNING: Time:2021-09-08 09:19:55.859801, [INFO]: check ip 210.76.216.138
+2021-09-08 09:19:55,859 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:19:55,875 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:19:55,891 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:19:55,891 - WARNING: Time:2021-09-08 09:19:55.891053, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:20:00,893 - WARNING: Time:2021-09-08 09:20:00.893577, [INFO]: check ip 210.76.216.1
+2021-09-08 09:20:00,893 - DEBUG: Starting new HTTP connection (1): 210.76.216.1:8080
+2021-09-08 09:20:10,906 - WARNING: Time:2021-09-08 09:20:10.906498, [ERROR]: ip 210.76.216.1 not connected
+2021-09-08 09:20:10,906 - WARNING: Time:2021-09-08 09:20:10.906498, [WARN]: process 4164 killed
+2021-09-08 09:20:10,906 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:20:11,204 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
+2021-09-08 09:20:11,204 - WARNING: Time:2021-09-08 09:20:11.204602, [INFO]: Get DNS Record:
+ {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-08 09:20:14'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
+2021-09-08 09:20:11,204 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:20:11,466 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
+2021-09-08 09:20:11,466 - WARNING: Time:2021-09-08 09:20:11.466811, [INFO]: Get new ip (210.76.216.138) from DNSPod.
+2021-09-08 09:23:22,386 - WARNING: Time:2021-09-08 09:23:22.386612, [INFO]: Generate new configuration:
 [common]
 server_addr=210.76.216.138:8024
 conn_type=tcp
@@ -66,16 +88,446 @@ remark=dk@Thinkpad-T430 CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
 mode=tcp
 target_addr=127.0.0.1:3389
 server_port=53390
-[1080ti]
+2021-09-08 09:23:22,425 - WARNING: Time:2021-09-08 09:23:22.425074, [INFO]: start process 2956 for connecting nps remote server
+2021-09-08 09:23:22,425 - WARNING: Time:2021-09-08 09:23:22.425074, [INFO]: check ip 210.76.216.138
+2021-09-08 09:23:22,427 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:23:22,436 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:23:22,450 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:23:22,451 - WARNING: Time:2021-09-08 09:23:22.451773, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:23:36,244 - WARNING: Time:2021-09-08 09:23:36.244963, [INFO]: check ip 210.76.216.138
+2021-09-08 09:23:36,247 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:23:36,277 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:23:36,290 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:23:36,291 - WARNING: Time:2021-09-08 09:23:36.290997, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:23:36,292 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:23:36,612 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
+2021-09-08 09:23:36,614 - WARNING: Time:2021-09-08 09:23:36.614280, [INFO]: Get DNS Record:
+ {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-08 09:23:40'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
+2021-09-08 09:23:36,616 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:23:36,854 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
+2021-09-08 09:23:36,860 - WARNING: Time:2021-09-08 09:23:36.860360, [INFO]: Get new ip (210.76.216.138) from DNSPod.
+2021-09-08 09:23:36,863 - WARNING: Time:2021-09-08 09:23:36.863358, [INFO]: Generate new configuration:
+[common]
+server_addr=210.76.216.138:8024
+conn_type=tcp
+vkey=(abcd1234)
+auto_reconnection=true
+crypt=true
+compress=true
+remark=dk@Thinkpad-T430 CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+[remote desktop]
 mode=tcp
-target_addr=192.168.255.82:59527
-server_port=59527
-[Titan]
+target_addr=127.0.0.1:3389
+server_port=53390
+2021-09-08 09:23:36,888 - WARNING: Time:2021-09-08 09:23:36.888758, [INFO]: start process 4440 for connecting nps remote server
+2021-09-08 09:23:36,889 - WARNING: Time:2021-09-08 09:23:36.889930, [INFO]: check ip 210.76.216.138
+2021-09-08 09:23:36,894 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:23:36,902 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:23:36,915 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:23:36,916 - WARNING: Time:2021-09-08 09:23:36.916653, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:23:41,927 - WARNING: Time:2021-09-08 09:23:41.927191, [INFO]: check ip 210.76.216.138
+2021-09-08 09:23:41,927 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:23:41,942 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:23:41,958 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:23:41,958 - WARNING: Time:2021-09-08 09:23:41.958465, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:23:46,969 - WARNING: Time:2021-09-08 09:23:46.969815, [INFO]: check ip 210.76.216.138
+2021-09-08 09:23:46,969 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:23:46,969 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:23:46,985 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:23:46,985 - WARNING: Time:2021-09-08 09:23:46.985416, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:23:51,985 - WARNING: Time:2021-09-08 09:23:51.985874, [INFO]: check ip 210.76.216.138
+2021-09-08 09:23:51,989 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:23:51,998 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:23:52,003 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:23:52,003 - WARNING: Time:2021-09-08 09:23:52.003318, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:23:57,004 - WARNING: Time:2021-09-08 09:23:57.004850, [INFO]: check ip 210.76.216.138
+2021-09-08 09:23:57,004 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:23:57,004 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:23:57,036 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:23:57,036 - WARNING: Time:2021-09-08 09:23:57.036103, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:24:02,039 - WARNING: Time:2021-09-08 09:24:02.039347, [INFO]: check ip 210.76.216.8
+2021-09-08 09:24:02,039 - DEBUG: Starting new HTTP connection (1): 210.76.216.8:8080
+2021-09-08 09:24:12,050 - WARNING: Time:2021-09-08 09:24:12.050528, [ERROR]: ip 210.76.216.8 not connected
+2021-09-08 09:24:12,050 - WARNING: Time:2021-09-08 09:24:12.050528, [WARN]: process 4440 killed
+2021-09-08 09:24:12,050 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:24:12,301 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
+2021-09-08 09:24:12,317 - WARNING: Time:2021-09-08 09:24:12.317511, [INFO]: Get DNS Record:
+ {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-08 09:24:16'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
+2021-09-08 09:24:12,317 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:24:12,567 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
+2021-09-08 09:24:12,567 - WARNING: Time:2021-09-08 09:24:12.567540, [INFO]: Get new ip (210.76.216.138) from DNSPod.
+2021-09-08 09:24:12,583 - WARNING: Time:2021-09-08 09:24:12.583146, [INFO]: Generate new configuration:
+[common]
+server_addr=210.76.216.138:8024
+conn_type=tcp
+vkey=(abcd1234)
+auto_reconnection=true
+crypt=true
+compress=true
+remark=dk@Thinkpad-T430 CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+[remote desktop]
 mode=tcp
-target_addr=192.168.255.81:22
-server_port=59528
-2021-09-07 11:42:15,312 - WARNING: Time:2021-09-07 11:42:15.312267, [INFO]: check ip 210.76.216.138
-2021-09-07 11:42:15,316 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
-2021-09-07 11:42:15,328 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
-2021-09-07 11:42:15,341 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
-2021-09-07 11:42:15,342 - WARNING: Time:2021-09-07 11:42:15.342936, [INFO]: ip 210.76.216.138 connected
+target_addr=127.0.0.1:3389
+server_port=53390
+2021-09-08 09:24:12,629 - WARNING: Time:2021-09-08 09:24:12.629152, [INFO]: start process 8204 for connecting nps remote server
+2021-09-08 09:24:12,629 - WARNING: Time:2021-09-08 09:24:12.629152, [INFO]: check ip 210.76.216.138
+2021-09-08 09:24:12,632 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:24:12,640 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:24:12,651 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:24:12,652 - WARNING: Time:2021-09-08 09:24:12.652308, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:24:17,653 - WARNING: Time:2021-09-08 09:24:17.653249, [INFO]: check ip 210.76.216.138
+2021-09-08 09:24:17,657 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:24:17,675 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:24:17,690 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:24:17,692 - WARNING: Time:2021-09-08 09:24:17.692852, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:24:22,707 - WARNING: Time:2021-09-08 09:24:22.707995, [INFO]: check ip 210.76.216.138
+2021-09-08 09:24:22,707 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:24:22,728 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:24:22,736 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:24:22,736 - WARNING: Time:2021-09-08 09:24:22.736398, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:24:27,736 - WARNING: Time:2021-09-08 09:24:27.736902, [INFO]: check ip 210.76.216.138
+2021-09-08 09:24:27,736 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:24:27,752 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:24:27,768 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:24:27,768 - WARNING: Time:2021-09-08 09:24:27.768179, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:24:32,782 - WARNING: Time:2021-09-08 09:24:32.782203, [INFO]: check ip 210.76.216.138
+2021-09-08 09:24:32,782 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:24:32,782 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:24:32,813 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:24:32,813 - WARNING: Time:2021-09-08 09:24:32.813451, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:24:37,815 - WARNING: Time:2021-09-08 09:24:37.815017, [INFO]: check ip 210.76.216.138
+2021-09-08 09:24:37,815 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:24:37,830 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:24:37,846 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:24:37,846 - WARNING: Time:2021-09-08 09:24:37.846264, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:24:42,860 - WARNING: Time:2021-09-08 09:24:42.860489, [INFO]: check ip 210.76.216.138
+2021-09-08 09:24:42,860 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:24:42,876 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:24:42,891 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:24:42,891 - WARNING: Time:2021-09-08 09:24:42.891743, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:24:47,891 - WARNING: Time:2021-09-08 09:24:47.891825, [INFO]: check ip 210.76.216.138
+2021-09-08 09:24:47,895 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:24:47,904 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:24:47,918 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:24:47,919 - WARNING: Time:2021-09-08 09:24:47.919439, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:24:52,926 - WARNING: Time:2021-09-08 09:24:52.926053, [INFO]: check ip 210.76.216.138
+2021-09-08 09:24:52,926 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:24:52,941 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:24:52,957 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:24:52,957 - WARNING: Time:2021-09-08 09:24:52.957325, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:24:57,971 - WARNING: Time:2021-09-08 09:24:57.971810, [INFO]: check ip 210.76.216.138
+2021-09-08 09:24:57,971 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:24:57,971 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:24:58,003 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:24:58,003 - WARNING: Time:2021-09-08 09:24:58.003036, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:25:03,003 - WARNING: Time:2021-09-08 09:25:03.003698, [INFO]: check ip 210.76.216.138
+2021-09-08 09:25:03,003 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:25:03,003 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:25:03,019 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:25:03,019 - WARNING: Time:2021-09-08 09:25:03.019326, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:25:08,033 - WARNING: Time:2021-09-08 09:25:08.033552, [INFO]: check ip 210.76.216.138
+2021-09-08 09:25:08,034 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:25:08,034 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:25:08,050 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:25:08,050 - WARNING: Time:2021-09-08 09:25:08.050246, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:25:13,051 - WARNING: Time:2021-09-08 09:25:13.051026, [INFO]: check ip 210.76.216.138
+2021-09-08 09:25:13,051 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:25:13,051 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:25:13,066 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:25:13,066 - WARNING: Time:2021-09-08 09:25:13.066629, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:25:18,067 - WARNING: Time:2021-09-08 09:25:18.067306, [INFO]: check ip 210.76.216.138
+2021-09-08 09:25:18,071 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:25:18,080 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:25:18,095 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:25:18,097 - WARNING: Time:2021-09-08 09:25:18.096904, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:25:23,109 - WARNING: Time:2021-09-08 09:25:23.109460, [INFO]: check ip 210.76.216.138
+2021-09-08 09:25:23,109 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:25:23,109 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:25:23,140 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:25:23,140 - WARNING: Time:2021-09-08 09:25:23.140691, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:27:55,511 - WARNING: Time:2021-09-08 09:27:55.511651, [INFO]: check ip 210.76.216.138
+2021-09-08 09:27:55,515 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:27:55,527 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:27:55,540 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:27:55,541 - WARNING: Time:2021-09-08 09:27:55.541566, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:27:55,542 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:27:55,846 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
+2021-09-08 09:27:55,846 - WARNING: Time:2021-09-08 09:27:55.846967, [INFO]: Get DNS Record:
+ {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-08 09:27:59'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
+2021-09-08 09:27:55,846 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:27:56,096 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
+2021-09-08 09:27:56,113 - WARNING: Time:2021-09-08 09:27:56.113474, [INFO]: Get new ip (210.76.216.138) from DNSPod.
+2021-09-08 09:27:56,115 - WARNING: Time:2021-09-08 09:27:56.115826, [INFO]: Generate new configuration:
+[common]
+server_addr=210.76.216.138:8024
+conn_type=tcp
+vkey=(abcd1234)
+auto_reconnection=true
+crypt=true
+compress=true
+remark=dk@Thinkpad-T430 CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+[remote desktop]
+mode=tcp
+target_addr=127.0.0.1:3389
+server_port=53390
+2021-09-08 09:27:56,136 - WARNING: Time:2021-09-08 09:27:56.136242, [INFO]: start process 4484 for connecting nps remote server
+2021-09-08 09:27:56,137 - WARNING: Time:2021-09-08 09:27:56.137242, [INFO]: check ip 210.76.216.138
+2021-09-08 09:27:56,139 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:27:56,148 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:27:56,161 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:27:56,162 - WARNING: Time:2021-09-08 09:27:56.162525, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:28:01,162 - WARNING: Time:2021-09-08 09:28:01.162694, [INFO]: check ip 210.76.216.138
+2021-09-08 09:28:01,166 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:28:01,185 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:28:01,205 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:28:01,206 - WARNING: Time:2021-09-08 09:28:01.206797, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:28:06,208 - WARNING: Time:2021-09-08 09:28:06.208723, [INFO]: check ip 210.76.216.138
+2021-09-08 09:28:06,208 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:28:06,224 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:28:06,239 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:28:06,239 - WARNING: Time:2021-09-08 09:28:06.239970, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:28:11,244 - WARNING: Time:2021-09-08 09:28:11.244312, [INFO]: check ip 210.76.216.138
+2021-09-08 09:28:11,244 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:28:11,259 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:28:11,275 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:28:11,275 - WARNING: Time:2021-09-08 09:28:11.275570, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:28:16,276 - WARNING: Time:2021-09-08 09:28:16.276377, [INFO]: check ip 210.76.21.138
+2021-09-08 09:28:16,276 - DEBUG: Starting new HTTP connection (1): 210.76.21.138:8080
+2021-09-08 09:28:26,283 - WARNING: Time:2021-09-08 09:28:26.283462, [ERROR]: ip 210.76.21.138 not connected
+2021-09-08 09:28:35,927 - WARNING: Time:2021-09-08 09:28:35.927272, [WARN]: process 4484 killed
+2021-09-08 09:28:35,930 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:28:36,185 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
+2021-09-08 09:28:36,187 - WARNING: Time:2021-09-08 09:28:36.187476, [INFO]: Get DNS Record:
+ {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-08 09:28:39'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
+2021-09-08 09:28:36,189 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:28:36,452 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
+2021-09-08 09:28:36,460 - WARNING: Time:2021-09-08 09:28:36.460950, [INFO]: Get new ip (210.76.216.138) from DNSPod.
+2021-09-08 09:28:36,462 - WARNING: Time:2021-09-08 09:28:36.462952, [INFO]: Generate new configuration:
+[common]
+server_addr=210.76.216.138:8024
+conn_type=tcp
+vkey=(abcd1234)
+auto_reconnection=true
+crypt=true
+compress=true
+remark=dk@Thinkpad-T430 CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+[remote desktop]
+mode=tcp
+target_addr=127.0.0.1:3389
+server_port=53390
+2021-09-08 09:28:36,503 - WARNING: Time:2021-09-08 09:28:36.503975, [INFO]: start process 9884 for connecting nps remote server
+2021-09-08 09:28:36,504 - WARNING: Time:2021-09-08 09:28:36.504976, [INFO]: check ip 210.76.216.138
+2021-09-08 09:28:36,506 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:28:36,515 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:28:36,527 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:28:36,528 - WARNING: Time:2021-09-08 09:28:36.528992, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:28:41,541 - WARNING: Time:2021-09-08 09:28:41.541745, [INFO]: check ip 210.76.216.138
+2021-09-08 09:28:41,541 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:28:41,557 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:28:41,572 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:28:41,572 - WARNING: Time:2021-09-08 09:28:41.572976, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:28:46,574 - WARNING: Time:2021-09-08 09:28:46.574371, [INFO]: check ip 210.76.216.138
+2021-09-08 09:28:46,574 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:28:46,590 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:28:46,590 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:28:46,605 - WARNING: Time:2021-09-08 09:28:46.605598, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:29:14,982 - WARNING: Time:2021-09-08 09:29:14.982912, [INFO]: check ip 210.76.216.138
+2021-09-08 09:29:14,986 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:29:15,006 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:29:15,020 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:29:15,020 - WARNING: Time:2021-09-08 09:29:15.020226, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:29:15,022 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:29:15,281 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
+2021-09-08 09:29:15,297 - WARNING: Time:2021-09-08 09:29:15.297348, [INFO]: Get DNS Record:
+ {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-08 09:29:19'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
+2021-09-08 09:29:15,297 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:29:15,580 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
+2021-09-08 09:29:15,582 - WARNING: Time:2021-09-08 09:29:15.582094, [INFO]: Get new ip (210.76.216.138) from DNSPod.
+2021-09-08 09:29:15,583 - WARNING: Time:2021-09-08 09:29:15.583094, [INFO]: Generate new configuration:
+[common]
+server_addr=210.76.216.138:8024
+conn_type=tcp
+vkey=(abcd1234)
+auto_reconnection=true
+crypt=true
+compress=true
+remark=dk@Thinkpad-T430 CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+[remote desktop]
+mode=tcp
+target_addr=127.0.0.1:3389
+server_port=53390
+2021-09-08 09:29:15,592 - WARNING: Time:2021-09-08 09:29:15.592408, [INFO]: start process 5188 for connecting nps remote server
+2021-09-08 09:29:15,592 - WARNING: Time:2021-09-08 09:29:15.592408, [INFO]: check ip 210.76.216.138
+2021-09-08 09:29:15,594 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:29:15,603 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:29:15,618 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:29:15,619 - WARNING: Time:2021-09-08 09:29:15.619843, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:29:20,623 - WARNING: Time:2021-09-08 09:29:20.623234, [INFO]: check ip 210.76.216.138
+2021-09-08 09:29:20,623 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:29:20,623 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:29:20,638 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:29:20,638 - WARNING: Time:2021-09-08 09:29:20.638858, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:29:25,639 - WARNING: Time:2021-09-08 09:29:25.639107, [INFO]: check ip 210.76.21.138
+2021-09-08 09:29:25,643 - DEBUG: Starting new HTTP connection (1): 210.76.21.138:8080
+2021-09-08 09:29:35,645 - WARNING: Time:2021-09-08 09:29:35.645172, [ERROR]: ip 210.76.21.138 not connected
+2021-09-08 09:29:35,877 - WARNING: Time:2021-09-08 09:29:35.877325, [WARN]: process 5188 killed
+2021-09-08 09:29:35,879 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:29:36,139 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
+2021-09-08 09:29:36,143 - WARNING: Time:2021-09-08 09:29:36.143202, [INFO]: Get DNS Record:
+ {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-08 09:29:39'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
+2021-09-08 09:29:36,147 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:29:36,398 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
+2021-09-08 09:29:36,401 - WARNING: Time:2021-09-08 09:29:36.401543, [INFO]: Get new ip (210.76.216.138) from DNSPod.
+2021-09-08 09:29:36,401 - WARNING: Time:2021-09-08 09:29:36.401543, [INFO]: Generate new configuration:
+[common]
+server_addr=210.76.216.138:8024
+conn_type=tcp
+vkey=(abcd1234)
+auto_reconnection=true
+crypt=true
+compress=true
+remark=dk@Thinkpad-T430 CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+[remote desktop]
+mode=tcp
+target_addr=127.0.0.1:3389
+server_port=53390
+2021-09-08 09:29:36,419 - WARNING: Time:2021-09-08 09:29:36.419555, [INFO]: start process 196 for connecting nps remote server
+2021-09-08 09:29:36,419 - WARNING: Time:2021-09-08 09:29:36.419555, [INFO]: check ip 210.76.216.138
+2021-09-08 09:29:36,421 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:29:36,428 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:29:36,438 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:29:36,438 - WARNING: Time:2021-09-08 09:29:36.438569, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:29:41,446 - WARNING: Time:2021-09-08 09:29:41.446708, [INFO]: check ip 210.76.216.138
+2021-09-08 09:29:41,446 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:29:41,446 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:29:41,477 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:29:41,477 - WARNING: Time:2021-09-08 09:29:41.477958, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:29:55,189 - WARNING: Time:2021-09-08 09:29:55.189622, [INFO]: check ip 210.76.216.138
+2021-09-08 09:29:55,193 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:29:55,213 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:29:55,225 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:29:55,225 - WARNING: Time:2021-09-08 09:29:55.225701, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:29:55,227 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:29:55,541 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
+2021-09-08 09:29:55,541 - WARNING: Time:2021-09-08 09:29:55.541694, [INFO]: Get DNS Record:
+ {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-08 09:29:59'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
+2021-09-08 09:29:55,541 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:29:55,802 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
+2021-09-08 09:29:55,817 - WARNING: Time:2021-09-08 09:29:55.817793, [INFO]: Get new ip (210.76.216.138) from DNSPod.
+2021-09-08 09:29:55,817 - WARNING: Time:2021-09-08 09:29:55.817793, [INFO]: Generate new configuration:
+[common]
+server_addr=210.76.216.138:8024
+conn_type=tcp
+vkey=(abcd1234)
+auto_reconnection=true
+crypt=true
+compress=true
+remark=dk@Thinkpad-T430 CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+[remote desktop]
+mode=tcp
+target_addr=127.0.0.1:3389
+server_port=53390
+2021-09-08 09:29:55,845 - WARNING: Time:2021-09-08 09:29:55.844309, [INFO]: start process 4512 for connecting nps remote server
+2021-09-08 09:29:55,845 - WARNING: Time:2021-09-08 09:29:55.845308, [INFO]: check ip 210.76.216.138
+2021-09-08 09:29:55,848 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:29:55,856 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:29:55,872 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:29:55,873 - WARNING: Time:2021-09-08 09:29:55.873036, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:30:00,880 - WARNING: Time:2021-09-08 09:30:00.880488, [INFO]: check ip 210.76.216.138
+2021-09-08 09:30:00,880 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:30:00,896 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:30:00,911 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:30:00,911 - WARNING: Time:2021-09-08 09:30:00.911756, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:30:05,920 - WARNING: Time:2021-09-08 09:30:05.920248, [INFO]: check ip 210.76.26.138
+2021-09-08 09:30:05,920 - DEBUG: Starting new HTTP connection (1): 210.76.26.138:8080
+2021-09-08 09:30:15,923 - WARNING: Time:2021-09-08 09:30:15.923222, [ERROR]: ip 210.76.26.138 not connected
+2021-09-08 09:30:16,177 - WARNING: Time:2021-09-08 09:30:16.177170, [WARN]: process 4512 killed
+2021-09-08 09:30:16,181 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:30:16,454 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
+2021-09-08 09:30:16,470 - WARNING: Time:2021-09-08 09:30:16.470291, [INFO]: Get DNS Record:
+ {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-08 09:30:20'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
+2021-09-08 09:30:16,470 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:30:16,735 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
+2021-09-08 09:30:16,735 - WARNING: Time:2021-09-08 09:30:16.735949, [INFO]: Get new ip (210.76.216.138) from DNSPod.
+2021-09-08 09:30:16,735 - WARNING: Time:2021-09-08 09:30:16.735949, [INFO]: Generate new configuration:
+[common]
+server_addr=210.76.216.138:8024
+conn_type=tcp
+vkey=(abcd1234)
+auto_reconnection=true
+crypt=true
+compress=true
+remark=dk@Thinkpad-T430 CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+[remote desktop]
+mode=tcp
+target_addr=127.0.0.1:3389
+server_port=53390
+2021-09-08 09:30:16,792 - WARNING: Time:2021-09-08 09:30:16.791364, [INFO]: start process 8260 for connecting nps remote server
+2021-09-08 09:30:16,792 - WARNING: Time:2021-09-08 09:30:16.792436, [INFO]: check ip 210.76.216.138
+2021-09-08 09:30:16,795 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:30:16,803 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:30:16,816 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:30:16,818 - WARNING: Time:2021-09-08 09:30:16.818961, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:30:21,825 - WARNING: Time:2021-09-08 09:30:21.825443, [INFO]: check ip 210.76.216.138
+2021-09-08 09:30:21,825 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:30:21,841 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:30:21,872 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:30:21,872 - WARNING: Time:2021-09-08 09:30:21.872318, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:30:26,879 - WARNING: Time:2021-09-08 09:30:26.879715, [INFO]: check ip 210.76.216.138
+2021-09-08 09:30:26,879 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:30:26,895 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:30:26,910 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:30:26,910 - WARNING: Time:2021-09-08 09:30:26.910969, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:30:31,926 - WARNING: Time:2021-09-08 09:30:31.926135, [INFO]: check ip 210.76.216.138
+2021-09-08 09:30:31,926 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:30:31,941 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:30:31,957 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:30:31,957 - WARNING: Time:2021-09-08 09:30:31.957407, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:30:36,958 - WARNING: Time:2021-09-08 09:30:36.958124, [INFO]: check ip 210.76.216.138
+2021-09-08 09:30:36,958 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:30:38,469 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:30:38,485 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:30:38,485 - WARNING: Time:2021-09-08 09:30:38.485266, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:30:43,486 - WARNING: Time:2021-09-08 09:30:43.486648, [INFO]: check ip 210.76.216.138
+2021-09-08 09:30:43,486 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:30:44,644 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:30:44,706 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:30:44,706 - WARNING: Time:2021-09-08 09:30:44.706633, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:30:49,711 - WARNING: Time:2021-09-08 09:30:49.711474, [INFO]: check ip 210.76.216.138
+2021-09-08 09:30:49,711 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:30:53,321 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:30:53,337 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:30:53,337 - WARNING: Time:2021-09-08 09:30:53.337034, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:30:58,338 - WARNING: Time:2021-09-08 09:30:58.338666, [INFO]: check ip 210.76.216.138
+2021-09-08 09:30:58,339 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:31:00,827 - DEBUG: http://210.76.216.138:8080 "GET / HTTP/1.1" 302 35
+2021-09-08 09:31:00,854 - DEBUG: http://210.76.216.138:8080 "GET /login/index HTTP/1.1" 200 3503
+2021-09-08 09:31:00,855 - WARNING: Time:2021-09-08 09:31:00.855052, [INFO]: ip 210.76.216.138 connected
+2021-09-08 09:31:05,858 - WARNING: Time:2021-09-08 09:31:05.858737, [INFO]: check ip 210.76.216.138
+2021-09-08 09:31:05,858 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:31:15,859 - WARNING: Time:2021-09-08 09:31:15.859548, [ERROR]: ip 210.76.216.138 not connected
+2021-09-08 09:31:16,515 - WARNING: Time:2021-09-08 09:31:16.515434, [WARN]: process 8260 killed
+2021-09-08 09:31:16,518 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:31:16,769 - DEBUG: https://dnsapi.cn:443 "POST /Record.List HTTP/1.1" 200 None
+2021-09-08 09:31:16,772 - WARNING: Time:2021-09-08 09:31:16.772375, [INFO]: Get DNS Record:
+ {'status': {'code': '1', 'message': '操作已经成功完成', 'created_at': '2021-09-08 09:31:20'}, 'domain': {'id': 87463236, 'name': 'jmhicoding.xyz', 'punycode': 'jmhicoding.xyz', 'grade': 'DP_Free', 'owner': 'qcloud_uin_100009796552@qcloud.com', 'ext_status': '', 'ttl': 600, 'min_ttl': 600, 'dnspod_ns': ['purple.dnspod.net', 'tipsy.dnspod.net'], 'status': 'enable'}, 'info': {'sub_domains': '4', 'record_total': '1', 'records_num': '1'}, 'records': [{'id': '828205675', 'ttl': '600', 'value': '210.76.216.138', 'enabled': '1', 'status': 'enable', 'updated_on': '2021-09-05 09:31:14', 'name': 'nps', 'line': '默认', 'line_id': '0', 'type': 'A', 'weight': None, 'monitor_status': '', 'remark': '', 'use_aqb': 'no', 'mx': '0'}]}
+2021-09-08 09:31:16,774 - DEBUG: Starting new HTTPS connection (1): dnsapi.cn:443
+2021-09-08 09:31:17,027 - DEBUG: https://dnsapi.cn:443 "POST /Record.Info HTTP/1.1" 200 None
+2021-09-08 09:31:17,031 - WARNING: Time:2021-09-08 09:31:17.031470, [INFO]: Get new ip (210.76.216.138) from DNSPod.
+2021-09-08 09:31:17,033 - WARNING: Time:2021-09-08 09:31:17.033473, [INFO]: Generate new configuration:
+[common]
+server_addr=210.76.216.138:8024
+conn_type=tcp
+vkey=(abcd1234)
+auto_reconnection=true
+crypt=true
+compress=true
+remark=dk@Thinkpad-T430 CPU: Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+[remote desktop]
+mode=tcp
+target_addr=127.0.0.1:3389
+server_port=53390
+2021-09-08 09:31:17,060 - WARNING: Time:2021-09-08 09:31:17.060599, [INFO]: start process 1312 for connecting nps remote server
+2021-09-08 09:31:17,061 - WARNING: Time:2021-09-08 09:31:17.061600, [INFO]: check ip 210.76.216.138
+2021-09-08 09:31:17,063 - DEBUG: Starting new HTTP connection (1): 210.76.216.138:8080
+2021-09-08 09:31:27,077 - WARNING: Time:2021-09-08 09:31:27.077874, [ERROR]: ip 210.76.216.138 not connected

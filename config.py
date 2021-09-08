@@ -13,7 +13,8 @@ proxy = [
     {
     'LAN_ip':'127.0.0.1',
     'LAN_port':'3389',
-    'remark':'remote desktop'
+    'remark':'remote desktop',
+	'Server_port':'53390'
     }
 ]
 
@@ -25,3 +26,6 @@ ip_fname = r"D:\windows_amd64_client\ip.json"
 
 ## 日志文件
 log_fname =  r"D:\windows_amd64_client\log"
+
+## ip保活检查时间(单位： 秒)
+time= 5
