@@ -15,7 +15,19 @@ proxy = [
     'LAN_port':'3389',
     'remark':'remote desktop',
 	'Server_port':'53390'
-    }
+    },
+    {
+    'LAN_ip':'192.168.255.82',
+    'LAN_port':'59527',
+    'remark':'1080ti',
+	'Server_port':'59527'
+    },
+    {
+    'LAN_ip':'192.168.255.81',
+    'LAN_port':'22',
+    'remark':'titan',
+	'Server_port':'59528'
+    },	
 ]
 
 ## 配置文件路径(不要修改, 按照固定目录放置文件)
