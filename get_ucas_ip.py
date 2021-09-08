@@ -28,6 +28,20 @@ def get_ucas_ip():
     ip = record['record']['value']
     with open(ip_fname,'w') as fp:
         json.dump({'ip':ip},fp)
+    with open(r'C:\Windows\System32\drivers\etc\hosts', 'r') as fp:
+        lines = fp.readlines()
+    flag = False
+    for index, line in  enumerate(lines):
+        if 'nps.jmhicoding.xyz' in line:
+            lines[index] = '{0} {1}'.format(ip, 'nps.jmhicoding.xyz')
+            flag = True
+
+    if flag == False:
+        lines.append('\n{0} {1}'.format(ip, 'nps.jmhicoding.xyz'))
+
+    with open(r'C:\Windows\System32\drivers\etc\hosts', 'w') as fp:
+        fp.writelines(lines)
+
     msg = 'Get new ip ({0}) from DNSPod.'.format(ip)
     logger.info(msg)
     return  ip

@@ -1,0 +1,9 @@
+2021/09/08 10:20:48.970 [1;34m[I][0m [npc.go:231]  the version of client is 0.26.9, the core version of client is 0.26.0
+2021/09/08 10:20:48.991 [1;34m[I][0m [control.go:97]  Loading configuration file D:\windows_amd64_client\conf\npc.conf successfully
+2021/09/08 10:21:20.563 [1;32m[N][0m [control.go:174]  web access login username:user password:qjudir6xu9ph4eda
+2021/09/08 10:21:20.575 [1;31m[E][0m [client.go:63]  The connection server failed and will be reconnected in five seconds, error Validation key qjudir6xu9ph4eda incorrect
+2021/09/08 10:21:25.586 [1;31m[E][0m [client.go:63]  The connection server failed and will be reconnected in five seconds, error Validation key qjudir6xu9ph4eda incorrect
+2021/09/08 10:21:30.602 [1;31m[E][0m [client.go:63]  The connection server failed and will be reconnected in five seconds, error Validation key qjudir6xu9ph4eda incorrect
+2021/09/08 10:21:35.629 [1;31m[E][0m [client.go:63]  The connection server failed and will be reconnected in five seconds, error Validation key qjudir6xu9ph4eda incorrect
+2021/09/08 10:21:40.642 [1;31m[E][0m [client.go:63]  The connection server failed and will be reconnected in five seconds, error Validation key qjudir6xu9ph4eda incorrect
+2021/09/08 10:21:45.668 [1;31m[E][0m [client.go:63]  The connection server failed and will be reconnected in five seconds, error Validation key qjudir6xu9ph4eda incorrect
